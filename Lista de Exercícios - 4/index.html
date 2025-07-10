@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Jogadores</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Formulário de Inscrição</h1>
+
+  <form onsubmit="cadastrarJogador(); return false;">
+    <input type="text" id="inputNome" placeholder="Nome do Jogador" required />
+    
+    <select id="inputPosicao" required>
+      <option value="">Selecione a Posição</option>
+      <option value="Goleiro">Goleiro</option>
+      <option value="Zagueiro">Zagueiro</option>
+      <option value="Lateral">Lateral</option>
+      <option value="Meio Campo">Meio Campo</option>
+      <option value="Atacante">Atacante</option>
+    </select>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <div id="jogadores">
+    <div class="posicao-section" id="Goleiro">
+      <h2>Goleiro</h2>
+      <div class="cards"></div>
+    </div>
+    <div class="posicao-section" id="Zagueiro">
+      <h2>Zagueiro</h2>
+      <div class="cards"></div>
+    </div>
+    <div class="posicao-section" id="Lateral">
+      <h2>Lateral</h2>
+      <div class="cards"></div>
+    </div>
+    <div class="posicao-section" id="Meio Campo">
+      <h2>Meio Campo</h2>
+      <div class="cards"></div>
+    </div>
+    <div class="posicao-section" id="Atacante">
+      <h2>Atacante</h2>
+      <div class="cards"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

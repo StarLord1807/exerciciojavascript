@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  background: cadetblue;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+form input, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.posicao-section {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card-jogador {
+  background: rgb(0, 255, 102);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px;
+  width: 150px;
+  text-align: center;
+}
